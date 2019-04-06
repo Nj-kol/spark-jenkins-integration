@@ -58,7 +58,7 @@ pipeline {
         		nexusPublisher nexusInstanceId: 'nexus2', 
         		nexusRepositoryId: 'releases', 
         		packages: [[$class: 'MavenPackage', 
-        		mavenAssetList: [[classifier: '', extension: '', filePath: '/var/lib/jenkins/workspace/spark-jenkins-integration/target/top-ten-genres-0.0.1-SNAPSHOT.jar']],
+        		mavenAssetList: [[classifier: '', extension: '', filePath: '/var/lib/jenkins/workspace/spark-jenkins-integration/target/spark-jenkins-integration-0.0.1-SNAPSHOT.jar']],
         		mavenCoordinate: [artifactId: 'top-ten-genres', groupId: 'com.njkol', packaging: 'jar', version: '0.0.1']]]
         	}
         }
